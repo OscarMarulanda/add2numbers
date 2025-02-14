@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="222dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="-180dp"
+
+            app:srcCompat="@drawable/calculator_22694" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Suma de dos numeros"
+            />
+
+        <EditText
+            android:id="@+id/txtNumber1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Digite el primer número"
+            android:minHeight="50sp"/>
+
+        <EditText
+            android:id="@+id/txtNumber2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Digite el segundo número"
+            android:minHeight="50sp"/>
+
+        <Button
+            android:id="@+id/sumarBoton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sumar" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Resultado: 0"
+            android:textSize="25sp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
